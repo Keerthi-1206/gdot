@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .div1{
+            width: 30px;
+            height: 30px;
+            background-color: blue;
+            display: inline-block;
+            border-radius: 60%;
+            animation-name: example;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        .div2{
+            width: 30px;
+            height: 30px;
+            background-color: red;
+            display: inline-block;
+            border-radius: 60%;
+            animation-name: change;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        .div3{
+            width: 30px;
+            height: 30px;
+            background-color: yellow;
+            display: inline-block;
+            border-radius: 60%;
+            animation-name: chance;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        .div4{
+            width: 30px;
+            height: 30px;
+            background-color: green;
+            display: inline-block;
+            border-radius: 60%;
+            animation-name: bug;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes example{
+            0%{
+                transform: translate(0px,0px);
+            }
+            25%{
+                transform: translate(0px,40px);
+            }
+            
+            75%{
+                transform: translate(0px,-40px);
+            }
+            100%{
+                transform: translate(0px,0px);
+            }
+
+        }
+        @keyframes change {
+            0%{
+                transform: translate(0px,0px);
+            }
+            25%{
+                transform: translate(0px,30px);
+            }
+            
+            75%{
+                transform: translate(0px,-20px);
+            }
+            100%{
+                transform: translate(0px,0px);
+            }
+            
+        }
+        @keyframes chance {
+            0%{
+                transform: translate(0px,0px);
+            }
+            25%{
+                transform: translate(0px,40px);
+            }
+            
+            75%{
+                transform: translate(0px,-30px);
+            }
+            100%{
+                transform: translate(0px,0px);
+            }
+        }
+        @keyframes bug {
+            0%{
+                transform: translate(0px,0px);
+            }
+            25%{
+                transform: translate(0px,30px);
+            }
+            75%{
+                transform: translate(0px,-20px);
+            }
+            100%{
+                transform: translate(0px,0px);
+            }
+            
+        }
+
+    </style>
+</head>
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+    <div class="div4"></div>
+</body>
+</html>
